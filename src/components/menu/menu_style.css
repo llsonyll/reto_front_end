@@ -1,0 +1,40 @@
+.menu{
+  flex: 0.8;
+  padding-block-start: 40px;
+  padding-inline: 40px;
+}
+
+.buscador__top__area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .buscador__text__field{
+} */
+
+.buscador__text__field input{
+  padding: 5px 15px;
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+}
+
+.main__artist{
+  height: 250px;
+  margin: 40px 0px;
+  border: 1px solid red;
+}
+
+.busqueda__resultados{
+  padding-top: 20px;
+  height: 420px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.item__busqueda{
+  border: 1px solid red;
+}

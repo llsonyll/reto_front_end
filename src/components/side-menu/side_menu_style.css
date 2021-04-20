@@ -1,0 +1,14 @@
+.side_menu {
+  flex: 0.2;
+  height: 100vh;
+  background: #662323;
+
+  padding-inline: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  margin-block-start: 40px;
+}
