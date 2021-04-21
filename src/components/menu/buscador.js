@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function buscador() {
   return (
@@ -7,7 +7,6 @@ export default function buscador() {
         <input type="text" placeholder="Buscar" />
       </div>
       <div className="buscador__user__name">
-        <i class="fas fa-user"></i>
         <p>Francisco M.</p>
       </div>
     </div>

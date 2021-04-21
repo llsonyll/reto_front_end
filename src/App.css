@@ -1,9 +1,10 @@
 *{
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding:  0px;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.App{
+.app_content{
   display: flex;
   flex-direction: row;
 }

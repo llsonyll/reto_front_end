@@ -1,0 +1,33 @@
+.play_bar{
+  position: sticky;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF7676;
+}
+
+.play_bar_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.track_data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.track_data .track_image{
+  width: 50px;
+  background-color: black;
+}
+
+.track_data .track_info{
+  margin-inline-start: 20px;
+}
+
+.play_bar_content .play_tools{
+  align-self: center;
+}

@@ -1,14 +1,37 @@
 .side_menu {
-  flex: 0.2;
-  height: 100vh;
+  display: inline-block;
+  position: sticky;
+  width: 20vw;
+  top: 0;
+  left: 0;
+  /* height: 100vh; */
   background: #662323;
-
   padding-inline: 40px;
 
   display: flex;
   flex-direction: column;
 }
 
-img{
-  margin-block-start: 40px;
+.side_menu h2{
+  margin-block-start: 30px;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.side_menu .selected{
+  color: #E86060;
+}
+
+.side_menu a{
+  margin-block-start: 1rem;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.side_menu img{
+  margin-block-start: 50px;
+  height: 4rem;
+  /* width: 250px; */
 }
