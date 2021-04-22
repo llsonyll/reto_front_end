@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlayCircle, faStepBackward, faStepForward } from '@fortawesome/free-solid-svg-icons'
 import './play_bar_style.css';
 
 const PlayBar = () => {
@@ -15,7 +17,9 @@ const PlayBar = () => {
         </div>
       </div>
       <div className="play_tools" >
-        <audio src="./../../music/10 - Until It Breaks.mp3" controls autoPlay> </audio>
+        <FontAwesomeIcon className="previus_track" icon={faStepBackward} />
+        <FontAwesomeIcon className="play_track" icon={faPlayCircle} />
+        <FontAwesomeIcon className="next_track" icon={faStepForward} />
       </div>
       <div className="play_config" >
         <p>3rd</p>

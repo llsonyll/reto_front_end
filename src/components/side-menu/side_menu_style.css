@@ -1,10 +1,10 @@
 .side_menu {
-  display: inline-block;
-  position: sticky;
+  position: relative;
+  /* position: fixed; */
   width: 20vw;
   top: 0;
   left: 0;
-  /* height: 100vh; */
+  height: 100vh;
   background: #662323;
   padding-inline: 40px;
 
@@ -22,12 +22,23 @@
   color: #E86060;
 }
 
-.side_menu a{
+.side_menu .selected::before{
+  content: '';
+  width: 5px;
+  height: 20px;
+  background-color: #E86060;
+  display: inline-block;
+  position: absolute;
+  left:  0px;
+}
+
+.side_menu p{
   margin-block-start: 1rem;
   font-size: 16px;
   color: #ffffff;
   font-weight: lighter;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .side_menu img{
