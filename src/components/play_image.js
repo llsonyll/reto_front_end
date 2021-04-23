@@ -6,7 +6,7 @@ const PlayImage = (props) => {
   return (
     <div className="play_image">
       <img src={props.image_url} alt="no imagen" />
-      <FontAwesomeIcon className="playIcon" icon={faPlay} onClick={() => console.log('click')} />
+      <FontAwesomeIcon className="playIcon" icon={faPlay} onClick={props.playThisAlbum} />
     </div>
   )
 }

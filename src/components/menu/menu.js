@@ -10,19 +10,19 @@ const Menu = (props) => {
     results: props.items,
   });
 
-  console.log(resultsState.results);
+  const [firstAlbum, setFirstAlbum] = useState(resultsState.results[0]);
 
-  const firstAlbum = resultsState.results[0];
+  // console.log(resultsState.results);
 
   return (
 
     <div className="menu">
-      <Buscador onSearch={setResultsState} />
-      <MainAlbum album={firstAlbum} />
+      <Buscador firstAlbum={setFirstAlbum} searchAlbumsResults={setResultsState} />
+      <MainAlbum album={firstAlbum} playThisAlbum={props.changeAlbum} />
       <h2> Resultados </h2>
       <div className="busqueda__resultados">
         {resultsState.results.map((album) => {
-          return <ItemBusqueda key={album.id} album={album} />
+          return <ItemBusqueda key={album.id} album={album} playThisAlbum={props.changeAlbum} />
         })}
       </div>
     </div>

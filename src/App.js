@@ -10,6 +10,8 @@ import { getInitialData } from './API/api_call';
 const App = () => {
   const [items, setItems] = useState('');
 
+  const [currentAlbum, setCurrentAlbum] = useState('');
+
   useEffect(() => {
     getInitialData().then(resp => {
       setItems(resp || '');
@@ -20,9 +22,9 @@ const App = () => {
     <div className="App">
       <div className="app_content">
         <SideMenu />
-        {items !== '' ? <Menu items={items} /> : <div> Cargando </div>}
+        {items !== '' ? <Menu items={items} changeAlbum={setCurrentAlbum} /> : <div> Cargando </div>}
       </div>
-      <div className="play_bar"><PlayBar /></div>
+      <div className="play_bar"><PlayBar currentAlbum={currentAlbum} /></div>
     </div>
   )
 

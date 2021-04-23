@@ -11,8 +11,8 @@ function MainAlbum(props) {
 
   return (
     <div className="main__album">
-      <div className="album_image">
-        <PlayImage image_url={album.cover_xl} />
+      <div className="album_image " onClick={() => props.playThisAlbum(album)}>
+        <PlayImage image_url={album.cover_xl || ''} />
       </div>
       <div className="album_info">
         <img src={album.artist.picture_xl} alt="no imagen" />
@@ -25,9 +25,9 @@ function MainAlbum(props) {
             </div>
           </div>
           <div className="album_actions">
-            <div className="button play"> Reproducir </div>
+            <div className="button play" onClick={() => props.playThisAlbum(album)}> Reproducir </div>
             <div className="button follow"> Seguir </div>
-            <FontAwesomeIcon icon={faEllipsisH} onClick={() => console.log('click')} />
+            <FontAwesomeIcon icon={faEllipsisH} />
           </div>
         </div>
       </div>

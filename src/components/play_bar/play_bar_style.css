@@ -45,4 +45,24 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 1rem;
+}
+
+.play_config {
+  padding-inline-end: 1rem;
+  color: #fff;
+}
+
+.slider{
+  margin-inline: 1rem;
+  width: 100px;
+
+}
+
+.muted{
+  color: #000;
+}
+
+.not-muted{
+  color: white;
 }
